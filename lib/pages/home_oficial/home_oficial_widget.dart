@@ -128,9 +128,11 @@ class _HomeOficialWidgetState extends State<HomeOficialWidget>
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
           top: true,
+          child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
+
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(18.0, 20.0, 18.0, 0.0),
                 child: Row(
@@ -556,6 +558,7 @@ class _HomeOficialWidgetState extends State<HomeOficialWidget>
           ),
         ),
       ),
+      )
     );
   }
 }
